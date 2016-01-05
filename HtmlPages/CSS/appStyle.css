@@ -1,0 +1,39 @@
+body{
+	background-color: #B45F04;
+    }
+.headerStyle{
+	font-family: serif;
+	font-style: oblique;
+	text-align: center;
+}
+
+#headerLine{
+	border-style: groove;
+}
+
+.imgPosition{
+    margin: 50px;
+    border: 1px solid #ccc;
+    float: center;
+    width: 180px;
+}
+	
+table{
+	
+	width:100%;
+}
+th,td{
+	border: 1px solid black;
+	text-align: center;
+	padding: 8px;
+}
+tr:nth-child(even){
+	background-color: #F2F5A9;
+}
+tr:nth-child(odd){
+	background-color: #FF0080;
+}
+
+<--!img{
+	display:none; <--! visibility:hidden-->
+}-->
