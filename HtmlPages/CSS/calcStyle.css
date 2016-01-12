@@ -1,0 +1,44 @@
+.bgP{
+	background-color: #FF7F50;
+    color:white;
+    margin:20px;
+    padding:20px;
+	
+}
+body{
+	background-image:url(../Images/back1.jpg);
+    background-repeat:repeat;
+	background-position: center;
+	background-attachment:relative;
+}
+
+.headerStyle{
+	color: red;
+	text-align:center;
+	background-color: black;
+	text-decoration: underline;
+}
+
+.bodyLine{
+	text-align: center;
+    width: 100%;
+    
+}
+#img{
+	background-image:url(../Images/back2.jpg);
+	margin: 0% 20% 0% 30%;
+	width:520px;
+	border-radius:15px;	
+}
+img.resize{
+	width:330px;
+	height:330px;
+	border-radius: 25px;
+	}
+
+#text{
+	width: 100%;
+}
+	
+	
+}

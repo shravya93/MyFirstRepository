@@ -1,0 +1,26 @@
+body{
+	color: #FF0080;
+	text-align:left;
+	
+}
+.headerStyle{
+	color:black;
+	text-align: center;
+	
+}
+
+.imgresize{
+	margin: 50px;
+    border: 1px solid #ccc;
+	position: fixed;
+	z-index:-100;
+}
+
+img.resize{
+	height: auto;
+	width:180px;
+}
+
+#tab{
+	padding-left:50px;
+}
