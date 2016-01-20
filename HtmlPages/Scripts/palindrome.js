@@ -1,4 +1,3 @@
-
 function palindrome(){
 	var str= document.getElementById('str1').value;
 	document.getElementById('res').innerHTML= "The Entered String is: "+str;

@@ -1,0 +1,91 @@
+<!Doctype html>
+<html lang="en-US">
+<head>
+   <title>Registration Page</title>  
+   <link rel="stylesheet" type="text/css" href="C:\Users\Shravya\Documents\GitHub\MyFirstRepository\HtmlPages\CSS\customerRegistration.css">
+   <script src="C:\Users\Shravya\Documents\GitHub\MyFirstRepository\HtmlPages\Scripts\customerRegistration.js"></script>
+</head>
+<body>
+   <header>
+      <h1 class="headerStyle"> Registration For My Website </h1>
+       
+   </header>
+   <form action="welcome.html" method="get">
+   <br><center> <input type="search" name="Search" placeholder="search user" id="rr"> <input type="submit"> <br></center>
+   <fieldset>
+   <Legend> Personal Information </Legend>
+   Firstname:<br> <input type="text" name="firstname" id="fname" placeholder="Please Enter Your Firstname" onkeyup="myFunction()"><p id="res"></p>
+   Lastname:<br> <input type="text" name="lastname" id="lname" placeholder="Please Enter Your Lastname" onkeyup="myFunction()"><p id="res1"></p>
+   Age:<br> <input type="range" name="age" min="16" max="60" id="a" onmouseup="mouseUp()"><p id="ag"></p>
+   SSN:<div>
+       (<input type="text" name="number1" id="ss" maxlength = 3 placeholder="Please Enter Your Area Code " onkeyup="myFunction()">)<p id="res8"></p>
+        <input type="text" name="number2" id="ss1" maxlength = 2 onkeyup="myFunction()"> -&nbsp;<p id="res43"></p>
+        <input type="text" name="number3" id="ss2" maxlength = 4 onkeyup="myFunction()"><p id="res44"></p>
+        </div> 
+   <br>
+   Date of Birth:<br> <input type="date" name="date" value="date" id="dt" onkeydown="click()"><p id="res9"></p><br>
+   Gender:<br>  Male <input type="radio" name="gender" id="m" value="Male" onmouseup="myFunction()"><p id="res10"></p>
+   Female <input type="radio" name="gender" id="f" value="Female" onmousedown="mouseDown()"><p id="res11"></p><br>
+    </fieldset>
+   <fieldset>
+   <Legend> Contact Information </Legend>
+   Email:<br> <input type="email" name="email" id="em" placeholder="Please Enter Your Email ID " onkeyup="myFunction()"><p id="res12"></p>
+ 
+   
+   Phone Number:<div>
+       (<input type="tel" name="number-1" id="te" maxlength = 3 placeholder="Please Enter Your Area Code " onkeyup="myFunction()">)<p id="res13"></p>
+        <input type="tel" name="number-2" id="te1" maxlength = 3 onkeyup="myFunction()"> -&nbsp;<p id="res23"></p>
+        <input type="tel" name="number-3" id="te2" maxlength = 4 onkeyup="myFunction()"><p id="res24"></p>
+        </div> 
+   Username:<br> <input type="text" name="username" id="uname" placeholder="Please Enter Your username" onkeyup="myFunction()"><p id="user"></p>
+   Password:<br> <input type="password" name="pass" id="pas"  placeholder="Please Enter Your password" onkeyup="myFunction()"><p id="pasi"></p>
+   Address:<br><address>
+              <input type="text" placeholder="Street or Road" id="st" size="15" onkeyup="myFunction()"><p id="res14"></p>
+              <input type="text" placeholder="Apt or Suite" id="ap" size="7" onkeyup="myFunction()"><p id="res15"></p>
+              <input type="text" placeholder="City" size="15" id="ci" onkeyup="myFunction()"><p id="res16"></p>
+              <input type="text" placeholder="Zipcode" size="8" id="zip" onkeyup="myFunction()"><p id="res17"></p>
+              <input type="text" placeholder="Country" size="10" id="cou" onkeyup="myFunction()"><p id="res18"></p>
+    </address>
+   </fieldset>
+   <fieldset>
+   <Legend> Background Information </Legend>
+  Student Status:<br>  <select name="courses" id="inc" onchange="myFunc()">
+                                  <option value="select" >---------</option><p id="res20"></p>
+								  <option value="fresh" >Freshman</option>
+                                   <option value="sop">Sophomore</option>
+                                   <option value="jun">Junior</option>
+                                   <option value="sen">Senior</option>
+                                   </select> <br> <br>
+  Previous Subject Knowledge:<br> <select name="courses" multiple id="in" ondrag="myFunction()">
+                                   <option value="intro" >Basics of graphics</option><p id="res19"></p>
+                                   <option value="DM">Basics of Data Mining</option>
+                                   <option value="DBMS">Basics of DBMS</option>
+                                   <option value="SE">Software Engineering</option>
+								   <option value="AI">Artificial Intelligence</option>
+                                   </select> <br> <br>
+  Courses Interested:<br>  <input type="checkbox" name="course1" value="CF" id="cf" onmouseleave="mouseUp()">Computer Forenscis<p id="res2"></p>
+                           <input type="checkbox" name="course2" value="AAI" id="ai" onmouseleave="mouseUp()">Advanced Artificial Intelligence<p id="res3"></p>
+						   <input type="checkbox" name="course3" value="CG" id="cg" onmouseleave="mouseUp()">Computer Graphics<p id="res4"></p>
+                           <input type="checkbox" name="course4" value="ADM" id="dm" onmouseleave="mouseUp()">Advanced Data Mining<p id="res5"></p>
+						   <input type="checkbox" name="course5" value="ADB" id="db" onmouseleave="mouseUp()">ADBMS<p id="res6"></p>
+                           <input type="checkbox" name="course6" value="ASE" id="se" onmouseleave="mouseUp()">Advanced Software Engineering<p id="res7"></p><br>
+  Favourite color: <br>  <input type="color" name="favcolor" value="#ff0000" >
+                         <input type="color" name="favcolor" value="#00FF00">
+						 <input type="color" name="favcolor" value="#0000FF"><br><br>
+  Upload Image:<label> <input type="file" name="input_file"> </label><br><br>
+  Upload Video:<br> <video width="320" height="240" controls>
+                    <source src="D:\iphone 2015\IMG_3330.mp4" type="video/mp4">
+                    </video> <br> <br>
+  Portfolio URL:<br> <input type="url" name="url" id="yep" placeholder="Please link Your Resume Url" onkeyup="myFunction()"><p id="yl"></p> <br>
+  Resume:<label> <input type="file" name="input_file"> </label>
+   </fieldset>
+   <fieldset class="gh">
+   <Legend> Confirmation </Legend>
+   <button type="submit" >Submit</button>
+   <button type="reset" >Reset</button>
+   </fieldset>
+   
+</body>
+
+</html>
+
